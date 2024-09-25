@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right top, #f2a5cc, #fa9abb, #ff90a6, #ff888f, #ff8276, #fc8973, #f98f72, #f59571, #f3a589, #efb5a0, #e9c4b8, #e0d4d0);
+    /* background-position: center; */
+    width:100vw;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    width:100%;
+    border:2px solid black;
+    margin-bottom:3%;
+
+}
+
+.border{
+    border: 2px solid rgb(207, 206, 206) !important; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.border:hover {
+    transform: scale(1.05); /* Slightly increases the size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.25); /* Adds a deeper shadow on hover */
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color:black;
+}
+
+/* Apply to all table headers */
+th {
+    text-decoration: none !important;
+}
+
+/* Ensure any links inside the table are not underlined */
+a {
+    text-decoration: none !important;
+}
+
+/* Optionally, if you only want to target links inside the table headers */
+th a {
+    text-decoration: none !important;
+}
+
+table{
+    width:100%;
+    height:100%;
+}
+
+.table1{
+    width:25rem !important;
+     /* height:100%;  */
+}
+
+.margin{
+    margin-top:5%;
+    margin-bottom:5%;
+
+}
+
+.margin1{
+    margin-top:35%;
+}
+
+.mainMargin{
+    padding:5px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+    /* background-color: red; */
+}
+
+.mainflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: #2196F3; */
+  }
+  .grid-item {
+
+    padding: 20px;
+ 
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens that are 768px wide or less */
+    .grid-container {
+        /* display:grid; */
+        display: block;
+        grid-template-columns: auto auto;
+      }
+
+      .margin1{
+        /* margin-top:5%; */
+        margin: 30px 35px;
+    }
+
+    .margin{
+        margin-top:5%;
+        /* margin-right:10%; */
+    
+    }
+
+}
+
